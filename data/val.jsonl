@@ -1,0 +1,2 @@
+{"instruction": "how to check which process uses port 8080", "command": "sudo lsof -i :8080"}
+{"instruction": "show cpu info", "command": "lscpu"}

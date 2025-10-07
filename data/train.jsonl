@@ -1,0 +1,15 @@
+{"instruction": "see all open ports for a specific application named nginx", "command": "sudo ss -lptn | grep nginx"}
+{"instruction": "show all listening ports (numeric)", "command": "sudo ss -ltnp"}
+{"instruction": "find process id by name 'python'", "command": "pgrep -f python"}
+{"instruction": "kill process by pid 1234", "command": "kill 1234"}
+{"instruction": "show running services with systemd", "command": "systemctl list-units --type=service --state=running"}
+{"instruction": "disk usage of current directory, human readable, top 20", "command": "du -h --max-depth=1 | sort -h | tail -n 20"}
+{"instruction": "tail last 100 lines of nginx access log", "command": "tail -n 100 /var/log/nginx/access.log"}
+{"instruction": "find files larger than 100MB under /var", "command": "find /var -type f -size +100M -print"}
+{"instruction": "check gpu usage (nvidia)", "command": "nvidia-smi"}
+{"instruction": "show ip addresses", "command": "ip addr show"}
+{"instruction": "show routes", "command": "ip route"}
+{"instruction": "count lines in all .py files recursively", "command": "find . -name '*.py' -print0 | xargs -0 wc -l | tail -n 1"}
+{"instruction": "list docker containers", "command": "docker ps -a"}
+{"instruction": "show environment variables", "command": "printenv"}
+{"instruction": "grep recursively for TODO in current project", "command": "grep -R \"TODO\" ."}
